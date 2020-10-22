@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanya Swarup- Portfolio</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/stylesheets/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/stylesheets/responsive.css"
+    />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/a2adfcbaf1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="mainContainer res-navBAR">
+      <p class="close" id="close" onclick="closeNAV()">&times;</p>
+      <div class="hamburgerCont" id="hamburger" onclick="viewNAV()">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+      <img src="assets/images/tanyaSwarup.jpg" width="100%" height="100%" />
+      <h2>TANYA SWARUP</h2>
+      <div class="res-menu" id="res-menu">
+        <ul class="navList" id="navList">
+          <li>
+            <a
+              href="Portfolio_TS.html#home"
+              class="active"
+              onclick="closeNAV();active(this);"
+              >Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="Portfolio_TS.html#skills"
+              onclick="closeNAV();active(this);"
+              >Skills
+            </a>
+          </li>
+          <li>
+            <a
+              id="aboutNav"
+              href="Portfolio_TS.html#about"
+              onclick="closeNAV();active(this);"
+              >About
+            </a>
+          </li>
+          <li>
+            <a
+              href="Portfolio_TS.html#experience"
+              onclick="closeNAV();active(this);"
+              >Experience / Education</a
+            >
+          </li>
+          <li>
+            <a
+              href="Portfolio_TS.html#projects"
+              onclick="closeNAV();active(this);"
+              >Projects
+            </a>
+          </li>
+          <!-- <li><a href="Portfolio_TS.html#cocurricular">Co-curricular</a></li> -->
+          <li>
+            <a
+              href="Portfolio_TS.html#contact"
+              onclick="closeNAV();active(this);"
+              >Contact
+            </a>
+          </li>
+        </ul>
+        <div class="social" id="social">
+          <a href="https://github.com/tanyaswarup"class="fab fa-github" target="_blank"></a>
+          <a href="https://codepen.io/your-work/" class="fab fa-codepen" target="_blank"></a>
+          <a href="https://www.linkedin.com/in/tanya-swarup-3b8302174/" class="fab fa-linkedin-in" target="_blank"></a>
+          <a href="mailto:tanyaswarup72@gmail.com" target="_blank" class="fas fa-envelope"> </a>
+        </div>
+        <footer style="margin-top: 8px;text-align: center;color:rgb(167, 166, 166);"><small>&copy;2020 Tanya Swarup</small></footer>
+      </div>
+    </section>
+    <section class="column">
+      <nav class="navContainer" id="navContainer">
+        <div class="navProfile">
+          <img
+            src="assets/images/tanyaSwarup.jpg"
+            alt="profilePhoto"
+            width="70px"
+            height="70px"
+          />
+          <h2>TANYA SWARUP</h2>
+          <p>Web Development Enthusiast</p>
+        </div>
+        <ul class="navList" id="navList">
+          <li>
+            <a
+              href="Portfolio_TS.html#home"
+              class="active"
+              onclick="active(this);"
+              >Home
+            </a>
+          </li>
+          <li>
+            <a href="Portfolio_TS.html#skills" onclick="active(this);"
+              >Skills
+            </a>
+          </li>
+          <li>
+            <a href="Portfolio_TS.html#about" onclick="active(this);">About </a>
+          </li>
+          <li>
+            <a href="Portfolio_TS.html#experience" onclick="active(this);"
+              >Experience / Education</a
+            >
+          </li>
+          <li>
+            <a href="Portfolio_TS.html#projects" onclick="active(this);"
+              >Projects
+            </a>
+          </li>
+          <!-- <li><a href="Portfolio_TS.html#cocurricular">Co-curricular</a></li> -->
+          <li>
+            <a href="Portfolio_TS.html#contact" onclick="active(this);"
+              >Contact
+            </a>
+          </li>
+        </ul>
+        <div class="social" id="social">
+          <a href="https://github.com/tanyaswarup"class="fab fa-github" target="_blank"></a>
+          <a href="https://codepen.io/your-work/" class="fab fa-codepen" target="_blank"></a>
+          <a href="https://www.linkedin.com/in/tanya-swarup-3b8302174/" class="fab fa-linkedin-in" target="_blank"></a>
+          <a href="mailto:tanyaswarup72@gmail.com" target="_blank" class="fas fa-envelope"> </a>
+        </div>
+        <footer style="color:rgb(167, 166, 166);position: relative;left: 30px;top: 8px;"><small>&copy;2020 Tanya Swarup</small></footer>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </nav>
+      <section class="mainContainer home" id="home">
+        <h1>I'm Tanya Swarup</h1>
+        <p>
+          A Full Stack Web Development Enthusiast, currently in III<sup>rd</sup>
+          year of B.Tech with CSE major, full of zeal towards paving her way in
+          the field of Web and exploring new concepts so as to utilize her
+          skills for the real world.
+        </p>
+        <div class="buttonContainerHome">
+          <a href="assets/material/resume(tanya swarup).pdf" target="_blank"
+            >View Resume</a
+          >
+          <a>Hire Me</a>
+        </div>
+      </section>
+    </section>
+    <section class="column columnRev" id="skills">
+      <section class="mainContainer skills">
+        <h1>SKILLS</h1>
+        <hr />
+        <div class="skillcontainer">
+          <div class="keyskill">
+            <h1 class="skill-heading">KEY SKILLS</h1>
+            <h2>HTML</h2>
+            <p>90%</p>
+            <div class="skillBar">
+              <div class="html"></div>
+            </div>
+            <h2>CSS</h2>
+            <p>90%</p>
+            <div class="skillBar">
+              <div class="css"></div>
+            </div>
+            <h2>Bootstrap</h2>
+            <p>60%</p>
+            <div class="skillBar">
+              <div class="bootstrap"></div>
+            </div>
+            <h2>JavaScript</h2>
+            <p>75%</p>
+            <div class="skillBar">
+              <div class="js"></div>
+            </div>
+            <h2>PHP</h2>
+            <p>45%</p>
+            <div class="skillBar">
+              <div class="php"></div>
+            </div>
+            <h2>MySQL</h2>
+            <p>50%</p>
+            <div class="skillBar">
+              <div class="mysql"></div>
+            </div>
+            <h2>MERN Stack</h2>
+            <p>10%</p>
+            <div class="skillBar">
+              <div class="mern"></div>
+            </div>
+            <h2>Wordpress</h2>
+            <p>20%</p>
+            <div class="skillBar">
+              <div class="wordpress"></div>
+            </div>
+            <h2>SEO</h2>
+            <p>10%</p>
+            <div class="skillBar">
+              <div class="seo"></div>
+            </div>
+          </div>
+          <div class="otherskill">
+            <h1 class="skill-heading">OTHER SKILLS</h1>
+            <ul>
+              <li>
+                Programming Languages:
+                <ul>
+                  <li>C</li>
+                  <li>C++</li>
+                  <li>JAVA (introductory)</li>
+                  <li>Kotlin (intermediate)</li>
+                  <li>Python (introductory</li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Microsoft Office:
+                <ul>
+                  <li>MS word</li>
+                  <li>MS powerpoint</li>
+                  <li>MS excel</li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                IDE:
+                <ul>
+                  <li>Visual Studio Code</li>
+                  <li>Atom</li>
+                  <li>Netbeans</li>
+                  <li>IntelliJ</li>
+                  <li>Android Studio</li>
+                  <li>Pycharm</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="column columnRev" id="about">
+      <section class="mainContainer about">
+        <h1>ABOUT</h1>
+        <hr />
+        <img
+          src="assets/images/tanyaSwarup.jpg"
+          alt="profilePhoto"
+          width="100%"
+          height="100%"
+        />
+        <p>
+          I am a person with great passion and dedication towards Web
+          Development. Apart from being a good listener who can work efficiently
+          even under pressure, I also possess good leadership and team
+          management qualities along with great communication skills
+        </p>
+        <br />
+        <div class="pContainer">
+          <p><span>Name</span>: Tanya Swarup</p>
+          <!-- 
+
+          -->
+          <p><span>Location</span>: Lakshmangarh,Rajasthan</p>
+          <!-- 
+ 
+          -->
+          <p><span>E-mail</span>: tanyaswarup72@gmail.com</p>
+          <!-- 
+ 
+          -->
+          <p><span>Hometown</span>: Patna, Bihar</p>
+          <!-- 
+ 
+         -->
+          <p><span>Job</span>: Student (III<sup>rd</sup> year B.Tech CSE)</p>
+
+          <div class="buttonContainerAbout">
+            <a
+              href="assets/material/CV(tanya swarup).pdf"
+              download
+              target="_blank"
+              ><i class="fas fa-cloud-download-alt"></i> Download CV</a
+            >
+            <a href="" class="hire">Hire Me</a>
+            <a
+              href="assets/material/resume(tanya swarup).pdf"
+              download
+              target="_blank"
+              ><i class="fas fa-cloud-download-alt"></i> Download Resume</a
+            >
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="column columnRev" id="experience">
+      <section class="mainContainer experience">
+        <h1>EXPERIENCE / EDUCATION</h1>
+        <hr />
+        <div class="expFlexCenter">
+          <div class="leftTimeline">
+            <div class="contentsleft">
+              <p>2018 - 2022</p>
+            </div>
+            <div class="contentsleft">
+              <p>2016 - 2018</p>
+            </div>
+            <div class="contentsleft">
+              <p>till 2016</p>
+            </div>
+          </div>
+          <div class="timelineContainer">
+            <div class="maintimeline">
+              <div class="timelinecircle"></div>
+            </div>
+            <div class="maintimeline">
+              <div class="timelinecircle"></div>
+            </div>
+            <div class="maintimeline">
+              <div class="timelinecircle"></div>
+            </div>
+          </div>
+          <div class="rightTimeline">
+            <div class="contentsright">
+              <p>
+                Degree: Bachelor's of Technology<br />Branch: CSE<br />University:
+                Mody University Of Science and Technology, Lakshmangarh,
+                Rajasthan<br />
+                CGPA (till 4th semester) Scored: 8.03
+              </p>
+            </div>
+            <div class="contentsright">
+              Cleared 12th Boards<br />School: Sri Chaitanya Educational
+              Institutaion, Visakhapatnam, A.P.<br />Board: CBSE<br />
+              Percentage Scored: 82.6
+            </div>
+            <div class="contentsright">
+              Cleared 10th Boards<br />School: St. Xavier's High School, Patna,
+              Bihar<br />Board: ICSE<br />
+              Percentage Scored: 80.6
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="column columnRev" id="projects">
+      <section class="mainContainer projects">
+        <h1>PROJECTS</h1>
+        <hr />
+        <br />
+        <div class="probox res-flexCOL">
+          <div class="pimg">
+            <img src="assets/images/csiWeb.png" width="100%" height="100%" />
+          </div>
+          <div class="pdesc">
+            <h2>Website of Computer Society of India- Lakshmangarh Chapter</h2>
+            <p>Duration: 1 month</p>
+            <p>Period: 10-08-2019 to 10-09-2020</p>
+            <p>Languages Used: HTML, CSS, JavaScript, Bootstrap</p>
+            <p>IDE: Atom</p>
+          </div>
+        </div>
+        <div class="probox flexREV res-flexCOL">
+          <div class="pimg">
+            <img src="assets/images/csiWeb.png" width="100%" height="100%" />
+          </div>
+          <div class="pdesc">
+            <h2>Book Store App</h2>
+            <p>Duration: 2 months</p>
+            <p>Period: 14-04-2020 to 25-05-2020</p>
+            <p>Languages Used: XML, Kotlin</p>
+            <p>IDE: IntelliJ, Android Studio</p>
+          </div>
+        </div>
+
+        <div class="probox res-flexCOL">
+          <div class="pimg">
+            <img
+              src="assets/images/collegeweb.png"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="pdesc">
+            <h2>University Website</h2>
+            <p>Duration: 2 months</p>
+            <p>Period: 05-08-2020 to 5-10-2020</p>
+            <p>Languages Used: HTML, CSS, JavaScript, PHP, MySQL</p>
+            <p>IDE: Visual Studio Code</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- <section class="column columnRev" id="cocurricular">
+      <section class="mainContainer cocurricular">
+      </section>
+    </section> -->
+    <section class="column columnRev" id="contact">
+      <section class="mainContainer contact">
+        <h1>GET IN TOUCH</h1>
+        <hr />
+        <div class="contactBox">
+          <div class="col-1-3">
+            <div class="info">
+              <h3><i class="fas fa-phone"></i>Phone</h3>
+              <a href="tel:+917091176781">+91 7091176781</a>
+              <br /><br />
+              <h3><i class="fas fa-envelope"></i>E-mail</h3>
+              <a href="mailto:tanyaswarup72@gmail.com" target="_blank"
+                >tanyaswarup72@gmail.com</a
+              >
+              <br /><br />
+              <h3><i class="fas fa-map-marker-alt"></i>Location</h3>
+              <address>
+                Lakshmangarh, dist.-sikar<br />
+                Jaipur,Rajasthan: 332311
+              </address>
+            </div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.252356841524!2d75.03384571501746!3d27.802002082752963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396cab0999c02435%3A0x6beb28aded79e5e7!2sMody%20University!5e0!3m2!1sen!2sin!4v1602584659316!5m2!1sen!2sin"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+                id="map"
+              ></iframe>
+            </div>
+            <!-- <br><h3><i class="fas fa-address-book"></i>Permanent address</h3>
+            <address>Shahganj<br>
+            Patna,Bihar: 800006
+              </address> -->
+          </div>
+          <div class="col-2-3">
+            <form name="contactme" action="#" autocomplete="off" method="POST">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+              /><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email address"
+              /><br />
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+              /><br />
+              <textarea
+                name="query"
+                id="query"
+                placeholder="Message.."
+              ></textarea>
+              <div class="btnFlex"><input type="submit" value="SEND" /></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="assets/Javascript/script.js"></script>
+  </body>
+</html>

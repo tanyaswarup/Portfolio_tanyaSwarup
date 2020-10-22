@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+textarea {
+  resize: none;
+}
+body {
+  overflow-wrap: break-word;
+  max-width: 1200px;
+  margin: 6vh auto;
+  padding: 0 25px;
+  background-color: black;
+  font-family: "Piazzolla", serif;
+  color: white;
+}
+h1 {
+  font-size: 27px;
+  font-family: "Bree Serif", serif;
+}
+.column {
+  display: flex;
+  position: relative;
+}
+.columnRev {
+  flex-direction: row-reverse;
+  padding-top: 6vh;
+}
+
+/* navigation */
+.navContainer {
+  /* color: rgba(0, 0, 0, 0.7); */
+  position: fixed;
+  background-color: rgb(24, 23, 23);
+  height: 88vh;
+  /* text-align: center; */
+  width: 260px;
+  padding: 36px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(172, 174, 175);
+  z-index: 100;
+}
+.navProfile p {
+  font-size: 17px;
+  line-height: 1.5;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.navProfile h2 {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: "Bree Serif", serif;
+}
+.navProfile img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.navList {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 35px;
+}
+.navList li {
+  margin: 15px 0;
+}
+.navList li a {
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 2px 0;
+  font-weight: bold;
+}
+.active,
+.navList li a:hover {
+  letter-spacing: 2px;
+  background-color: rgb(226, 222, 222);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(186, 188, 189);
+  color: black;
+}
+.progress-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  height: 10px;
+  background: inherit;
+}
+
+.progress-bar {
+  height: 10px;
+  background: rgb(77, 76, 76);
+  border-radius: 0 0 10px 10px;
+  width: 0%;
+}
+
+/* Social Media */
+.social {
+  text-align: center;
+  margin-top: 30x;
+}
+.social .fab,
+.social .fas {
+  padding: 5px 4px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 1px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(77, 76, 76);
+  color: white;
+  border-radius: 5px;
+}
+
+.social .fab:hover,
+.social .fas:hover {
+  color: rgb(77, 76, 76);
+  background-color: white;
+  font-weight: bold;
+}
+
+/* 
+.fa-linkedin-in:hover {
+  background-color: #007bb5;
+}
+
+.fa-github:hover{
+    background-color: black;
+}
+
+.fa-codepen:hover{
+    background-color: black;
+}
+
+.fa-envelope:hover{
+    background-color: rgb(201, 41, 41);
+} */
+
+/* Contents */
+.mainContainer {
+  width: 73%;
+  height: 88vh;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(172, 174, 175);
+  margin-left: 27%;
+  background-color: rgb(24, 23, 23);
+}
+.res-navBAR {
+  height: auto;
+  margin-bottom: 35px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: sticky;
+  top: 0;
+  display: none;
+  z-index: 150;
+  cursor: pointer;
+}
+.res-navBAR img {
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  left: 90px;
+  height: 56px;
+  width: 56px;
+}
+.res-navBAR h2 {
+  position: absolute;
+  top: 19px;
+  left: 160px;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: "Bree Serif", serif;
+}
+
+.hamburger {
+  height: 4px;
+  margin: 7px;
+  width: 36px;
+  border-radius: 10px;
+  background-color: white;
+}
+.close {
+  position: absolute;
+  top: -38px;
+  font-size: 90px;
+  color: white;
+  display: none;
+}
+/* Home */
+.home {
+  text-align: justify;
+  padding: 0 60px;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home h1 {
+  font-size: 50px;
+  line-height: 1.5;
+}
+.home p {
+  font-size: 20px;
+  line-height: 1.4;
+}
+.home > .buttonContainerHome {
+  display: flex;
+  flex-direction: row;
+}
+.home a {
+  border: none;
+  margin: 20px 0;
+  margin-right: 25px;
+  width: 26%;
+  padding: 8px 10px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(24, 23, 23);
+  font-weight: bold;
+  text-align: center;
+}
+
+.home a:hover {
+  background-color: rgb(24, 23, 23);
+  color: white;
+  box-shadow: 0 0 7px rgb(172, 174, 175);
+}
+
+/* Skill */
+.skills {
+  background-color: rgb(226, 222, 222);
+  color: black;
+  height: auto;
+}
+.skill-heading {
+  font-size: 23px;
+  text-align: center;
+  padding: 20px 0;
+  font-style: italic;
+}
+.skillcontainer {
+  display: flex;
+  flex-direction: row;
+}
+.keyskill,
+.otherskill {
+  width: 50%;
+}
+.otherskill {
+  padding-left: 50px;
+}
+.skills ul {
+  font-size: 15px;
+  color: rgb(54, 54, 54);
+  padding-bottom: 8px;
+}
+.skills ul ul {
+  margin-left: 28px;
+}
+.skills .keyskill h2 {
+  display: inline-block;
+  font-size: 17px;
+  width: 50%;
+  color: rgb(54, 54, 54);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 7px;
+}
+.skills .keyskill p {
+  display: inline-block;
+  text-align: right;
+  font-size: 16px;
+  width: 48%;
+  color: rgb(136, 135, 135);
+}
+
+.skillBar {
+  width: 100%;
+  background-color: rgb(197, 196, 196);
+  border-radius: 5px;
+  margin-bottom: 17px;
+  height: 6px;
+}
+.html,
+.wordpress,
+.mern,
+.php,
+.mysql,
+.js,
+.css,
+.bootstrap,
+.seo {
+  width: 90%;
+  height: 6px;
+  background-color: rgb(133, 131, 131);
+  border: 6px;
+  border-radius: 5px;
+}
+.css {
+  width: 90%;
+}
+.bootstrap {
+  width: 60%;
+}
+.js {
+  width: 75%;
+}
+.php {
+  width: 45%;
+}
+.mysql {
+  width: 50%;
+}
+.mern {
+  width: 10%;
+}
+.wordpress {
+  width: 20%;
+}
+.seo {
+  width: 10%;
+}
+
+/* About */
+.about {
+  height: auto;
+  position: relative;
+}
+
+.about p {
+  padding-left: 140px;
+  font-size: 17px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.about img {
+  border-radius: 50%;
+  position: absolute;
+  height: 120px;
+  width: 120px;
+}
+.about hr {
+  margin-bottom: 30px;
+}
+.about .pContainer {
+  padding-left: 140px;
+}
+.about .pContainer p {
+  display: inline-block;
+  width: 48%;
+  padding: 3px 0;
+}
+.about .pContainer span {
+  color: rgb(155, 155, 155);
+}
+
+.about .buttonContainerAbout {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.about a {
+  border: none;
+  margin-right: 25px;
+  padding: 8px 10px;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(24, 23, 23);
+  font-weight: bold;
+  text-align: center;
+}
+.about a:hover,
+.about a.hire {
+  background-color: rgb(24, 23, 23);
+  color: white;
+  box-shadow: 0 0 7px rgb(172, 174, 175);
+}
+.about a.hire:hover {
+  background-color: white;
+  color: rgb(24, 23, 23);
+  box-shadow: none;
+}
+
+/* Experience */
+.experience {
+  background-color: rgb(226, 222, 222);
+  color: black;
+  height: auto;
+}
+
+.expFlexCenter {
+  display: flex;
+  position: relative;
+  left: 2%;
+  top: 4vh;
+}
+.timelineContainer {
+  padding: 0 25px;
+  position: relative;
+}
+.maintimeline {
+  background-color: black;
+  width: 1.5px;
+  height: 20.3vh;
+  position: relative;
+}
+.timelinecircle {
+  width: 11px;
+  height: 11px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: rgb(226, 222, 222);
+  position: absolute;
+  left: -4.5px;
+}
+
+.leftTimeline {
+  position: relative;
+}
+.contentsleft {
+  height: 19.6vh;
+}
+.rightTimeline {
+  position: relative;
+}
+.contentsright {
+  height: 19.6vh;
+}
+
+/* Projects */
+.projects {
+  height: auto;
+  background-color: rgb(226, 222, 222);
+  color: black;
+}
+
+.projects .probox {
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: rgb(214, 213, 213);
+  box-shadow: 0 0 5px rgb(65, 66, 66);
+  display: flex;
+}
+.flexREV {
+  flex-direction: row-reverse;
+}
+
+.probox .pimg {
+  width: 45%;
+}
+.pimg > img {
+  border-radius: 5px;
+}
+.probox .pdesc {
+  width: 50%;
+  height: 200px;
+  padding-left: 20px;
+}
+.flexREV .pdesc {
+  padding-left: 0;
+  width: 55%;
+}
+.probox .pdesc h2 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* Co-curricular
+.cocurricular {
+  height: auto;
+} */
+
+/* Contact */
+.contact {
+  background-color: rgb(226, 222, 222);
+  color: black;
+  height: auto;
+}
+.contact .contactBox {
+  display: flex;
+}
+.contact .col-1-3 {
+  width: 38%;
+  padding-top: 40px;
+}
+.contact .col-2-3 {
+  width: 62%;
+  padding: 0 0 0 40px;
+}
+form {
+  padding-top: 35px;
+}
+input {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin: 6px 0;
+  padding: 8px;
+  font-family: "Times New Roman", Times, serif;
+}
+input:not([type="submit"]) {
+  width: 100%;
+  font-size: 17px;
+}
+.contact .btnFlex {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+input[type="submit"] {
+  width: 100px;
+  cursor: pointer;
+  background-color: rgb(24, 23, 23);
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+input[type="submit"]:hover {
+  color: rgb(24, 23, 23);
+  border: 1px solid rgb(24, 23, 23);
+  background-color: rgb(207, 206, 206);
+  font-weight: bold;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid black;
+  box-shadow: 0 0 4px rgb(0, 0, 0);
+}
+textarea {
+  border: none;
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  margin: 6px 0 8px 0;
+  padding: 8px;
+  font-size: 18px;
+  outline: none;
+  font-family: "Times New Roman", Times, serif;
+}
+#map {
+  width: 100%;
+  height: 160px;
+  margin-top: 10px;
+}
+.contact a,
+.contact address {
+  color: rgb(70, 69, 69);
+  font-size: 18px;
+  margin-left: 35px;
+}
+.contact .fas {
+  color: rgb(77, 76, 76);
+  font-size: 25px;
+  margin: 5px;
+}

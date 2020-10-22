@@ -1,0 +1,278 @@
+@media only screen and (max-width: 1070px) {
+  .home {
+    height: 74vh;
+  }
+  .navContainer {
+    display: none;
+  }
+  .mainContainer {
+    width: 100%;
+    margin-left: 0;
+  }
+  .res-navBAR {
+    display: block;
+  }
+  .progress-container {
+    display: none;
+  }
+  .res-menu {
+    margin-left: 60px;
+    margin-top: 35px;
+    display: none;
+  }
+  .timelineContainer {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 835px) {
+  .home {
+    padding: 0 45px;
+  }
+  .home a {
+    width: 170px;
+  }
+  .about .pContainer p {
+    display: block;
+    width: 100%;
+  }
+  .about .buttonContainerAbout {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about a {
+    width: 210px;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  .flexREV {
+    flex-direction: row;
+  }
+  .probox .pimg {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 300px;
+  }
+  .probox .pdesc {
+    padding-left: 0;
+    width: 100%;
+  }
+  .res-flexCOL {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .timelineContainer {
+    padding: 0 15px;
+  }
+  .contact .contactBox {
+    flex-direction: column;
+  }
+  .contact .col-1-3 {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .contact .col-1-3 .map {
+    width: 40%;
+  }
+  .contact .col-1-3 .info {
+    width: 60%;
+    padding-left: 10px;
+  }
+  #map {
+    height: 230px;
+  }
+  .contact .col-2-3 {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .home {
+    padding: 0 30px;
+  }
+  .home h1 {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .home > .buttonContainerHome {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .home a {
+    margin: 8px 0;
+  }
+  .about {
+    padding-bottom: 130px;
+  }
+  .about p {
+    position: relative;
+    top: 18%;
+    left: 0;
+    padding-left: 0;
+  }
+  .about img {
+    height: 90px;
+    width: 90px;
+  }
+  .about .pContainer {
+    position: relative;
+    padding-left: 0px;
+    top: 16%;
+  }
+  .contact .col-1-3 {
+    flex-direction: column;
+  }
+  .contact .col-1-3 .map {
+    width: 100%;
+  }
+  #map {
+    height: 120px;
+  }
+  .contact .col-1-3 .info {
+    width: 100%;
+  }
+  form {
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home p {
+    font-size: 18px;
+  }
+  .home h1 {
+    font-size: 38px;
+  }
+  .home a {
+    font-size: 17px;
+  }
+  .skillcontainer {
+    flex-direction: column;
+  }
+  .keyskill,
+  .otherskill {
+    width: 100%;
+  }
+  .otherskill {
+    padding-left: 0;
+  }
+  .skills .keyskill h2 {
+    padding-bottom: 2px;
+  }
+  .skillBar,
+  .html,
+  .wordpress,
+  .mern,
+  .php,
+  .mysql,
+  .js,
+  .css,
+  .bootstrap,
+  .seo {
+    height: 3px;
+  }
+  .skills .keyskill h2 {
+    font-size: 16px;
+  }
+  .skills .keyskill p {
+    font-size: 15px;
+  }
+  .res-navBAR img {
+    top: 8px;
+    height: 46px;
+    width: 46px;
+  }
+  .hamburger {
+    height: 3px;
+    margin: 5px;
+    width: 30px;
+  }
+  .close {
+    font-size: 60px;
+    top: -20px;
+  }
+  .res-navBAR h2 {
+    top: 14px;
+    font-size: 21px;
+  }
+  .contentsright,
+  .contentsleft {
+    height: 28vh;
+  }
+  .maintimeline {
+    height: 28.4vh;
+  }
+  .probox .pimg {
+    height: 220px;
+  }
+}
+@media only screen and (max-width: 413px) {
+  .home p {
+    font-size: 17px;
+  }
+  .home h1 {
+    font-size: 35px;
+  }
+  .home a {
+    font-size: 16px;
+  }
+  .res-navBAR h2 {
+    font-size: 17px;
+    top: 16px;
+  }
+  .about p {
+    font-size: 16px;
+  }
+  .contentsright,
+  .contentsleft {
+    height: 35vh;
+  }
+  .maintimeline {
+    height: 35.4vh;
+  }
+  .probox .pdesc h2 {
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .probox .pdesc p {
+    font-size: 15px;
+  }
+  .contact a,
+  .contact address {
+    margin-left: 0;
+  }
+  .probox .pimg {
+    height: 180px;
+  }
+}
+@media only screen and (max-width: 361px) {
+  .res-navBAR h2 {
+    font-size: 15px;
+  }
+  .contentsright,
+  .contentsleft {
+    height: 40vh;
+  }
+  .maintimeline {
+    height: 40.4vh;
+  }
+  .probox .pdesc h2 {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .probox .pdesc p {
+    font-size: 13px;
+  }
+  .probox .pimg {
+    height: 160px;
+  }
+}
+@media only screen and (max-width: 318px) {
+  body {
+    width: 1200px;
+  }
+}
